@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+{% block title %}
+<title>Pneumonia Detection</title>
+<h1>Pneumonia Detector</h1>
+{% endblock %}
+
+</head>
+<body>
+    <h3>Upload Chest Xray Image to detect Pneumonia</h3>
+<!--
+    {% if filename %}
+    <div>
+        <img scr="{{ url_for('display_image')}}">
+
+    </div>
+    {% endif %}
+-->
+    <form method="POST" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    {{ form.image }}
+    <button id="upload-button" type="submit">Upload</button>
+    <p id="prediction"> {{ pred }} </p>
+    </form>
+
+    
+</body>
+
+
+</html>

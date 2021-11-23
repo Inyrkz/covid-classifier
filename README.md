@@ -1,2 +1,2 @@
-# covid-classifier
-Building a CNN model to classify covid 19 chest x-ray images and normal chest x-ray images
+# PneumoniaX
+Building a flask app using deep learning to detect Covid 19 and Pneumonia from Chest X-Ray Images of Patients

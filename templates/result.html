@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block header2%}
+<!-- <h2> Your Result</h2> -->
+{% endblock%}
+
+{% block body%}
+<body class="bg-result">
+    <div class="menu">
+		<ul>
+			<li>
+				<a href="{{ url_for('covid') }}">Check for COVID 19</a>
+			</li>
+			<li>
+				<a href="{{ url_for('pneumo') }}">Check for Pneumonia</a>
+			</li>
+		</ul>
+	</div>
+{% endblock %}
+
+{% block result%}   
+    {% if filename %}
+    <div class="container">
+		<div>
+			<h2> Your Result</h2>
+		</div>
+		<p>
+			{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				<ul class=flashes>
+					{% for message in messages %}
+						<li>{{ message }}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+			{% endwith %}
+		</p>
+		<div id ="radiograph" >
+            <img src="{{ url_for('display_image', filename=filename) }}" alt="X-Ray Chest Image" height="150px"
+                width="150px" />
+        </div>
+        <div>
+            <h3>  {{ prediction }} </h3>
+        </div>    
+    </div>
+
+    
+    {% endif %}
+{% endblock %}

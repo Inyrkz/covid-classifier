@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>    
+<head>
+    {% block title %}
+
+    {% endblock %}
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css"/>
+</head>
+
+{% block body%}
+<body class="bg-detector">
+    <div class="container">
+{% endblock %}
+
+    {% block header2%}
+    <h2>Upload Chest X-ray Image</h2>
+    {% endblock%}
+
+    {% block subheader %}
+
+    {% endblock %}
+
+    
+      
+
+    {% block prediction %}
+    <!--<form method="POST" action="/" enctype="multipart/form-data"> -->
+    {% endblock %}
+
+    {% block result%}
+    {% endblock %}
+    
+    {% block link %}
+    {% endblock %}
+</div>
+</body>
+</html>

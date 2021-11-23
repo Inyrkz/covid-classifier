@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title> Covid Detector </title>
+{% endblock %}
+
+{% block subheader %}
+<h3> Covid Classifier</h3>
+{% endblock %}
+
+{% block prediction %}
+<form method="POST" action="/" enctype="multipart/form-data">
+    <dl>
+        <p>
+            <input type="file" name="file" autocomplete="off" required>
+        </p>
+    </dl>
+    <p>
+        <input type="submit" value="Predict">
+    </p>
+</form>
+{% endblock %}
+
+{% block link %}
+<div>
+    <p></p>
+    <p id=link><a href="{{ url_for('pneumo') }}"> Click here to check for Pneumonia </a></p>
+</div>
+{% endblock %}

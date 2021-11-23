@@ -10,4 +10,7 @@ pip install -r requirements.txt
 The deep learning model is too large to be stored on Github. 
 You'll have to retrain the model by running the codes in the `covidtrial.ipynb` notebook.
 
-In the `app.py` file, change the code in line 4 to the name of your deep learning model.
+In the `app.py` file, change the code in line 33 to the name of your deep learning model file.
+`    model = load_model("model_0.886.h5")`
+
+

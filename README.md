@@ -36,4 +36,8 @@ You can run the web application by running the code below in your terminal.
 python app.py
 ```
 
+![Homepage](images/homepage.png)
 
+
+
+![Result Page](images/result.png)

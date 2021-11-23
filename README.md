@@ -1,6 +1,12 @@
 # PneumoniaX
 Building a flask app using deep learning to detect Covid 19 and Pneumonia from Chest X-Ray Images of Patients
 
+The `CXR.ipynb` notebook is contains code for training a Convolutional Neural Network to detect Viral Pneumonia, COVID-19 and Normal Chest Radiographs.
+
+The `CovidTrial.ipynb` notebook is contains code for training a Convolutional Neural Network to detect COVID-19 and Normal Chest Radiographs.
+
+The `pneuX_classifier.ipynb` notebook is contains code for training a Convolutional Neural Network to detect Pneumonia and Normal Chest Radiographs.
+
 
 Create a virtual environment by running the code below.
 
@@ -22,7 +28,7 @@ pip install -r requirements.txt
 ```
 
 The deep learning model is too large to be stored on Github. 
-You'll have to retrain the model by running the codes in the `covidtrial.ipynb` notebook.
+You'll have to retrain the model by running the codes in the `CovidTrial.ipynb` and `pneuX_classifier.ipynb` notebook.
 
 In the `app.py` file, change the code in `line 33` to the name of your deep learning model file.
 
